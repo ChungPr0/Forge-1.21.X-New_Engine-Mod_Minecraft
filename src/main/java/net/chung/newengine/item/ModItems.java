@@ -11,7 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, NewEngine.MOD_ID);
 
-    public static final RegistryObject<Item> UNKNOWNRITE = ITEMS.register("unknownrite",
+    public static final RegistryObject<Item> UNKNOWNRITE_INGOT = ITEMS.register("unknownrite_ingot",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNKNOWNRITE_DUST = ITEMS.register("unknownrite_dust",
             () -> new Item(new Item.Properties()));

@@ -17,9 +17,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// Very important Comment
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(net.chung.newengine.NewEngine.MOD_ID)
+@Mod(NewEngine.MOD_ID)
 public class NewEngine {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "newengine";
@@ -47,7 +46,7 @@ public class NewEngine {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.UNKNOWNRITE);
+            event.accept(ModItems.UNKNOWNRITE_INGOT);
             event.accept(ModItems.UNKNOWNRITE_DUST);
         }
     }
