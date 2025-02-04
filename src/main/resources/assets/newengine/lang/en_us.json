@@ -2,5 +2,8 @@
   "item.newengine.unknownrite_ingot": "Unknownrite Ingot",
   "item.newengine.unknownrite_dust": "Unknownrite Dust",
 
-  "block.newengine.unknownrite_block": "Unknownrite Block"
+  "block.newengine.unknownrite_block": "Block of Unknownrite",
+
+  "creativetab.newengine.unknownrite_items": "Unknownrite Items",
+  "creativetab.newengine.unknownrite_blocks": "Unknownrite Blocks"
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "newengine:unknownrite_ingot"
+    }
+  },
+  "pattern": [
+    "UUU",
+    "UUU",
+    "UUU"
+  ],
+  "result": {
+    "count": 1,
+    "id": "newengine:unknownrite_block"
+  }
+}
