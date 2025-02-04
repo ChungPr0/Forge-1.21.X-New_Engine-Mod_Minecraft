@@ -21,6 +21,7 @@ public class ModCreativeModeTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.UNKNOWNRITE_INGOT.get());
                         output.accept(ModItems.UNKNOWNRITE_DUST.get());
+                        output.accept(ModItems.UNKNOWN_PEARL.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> UNKNOWNRITE_BlOCKS_TAB = CREATIVE_MODE_TAB.register("unknownrite_bloks_tab",
