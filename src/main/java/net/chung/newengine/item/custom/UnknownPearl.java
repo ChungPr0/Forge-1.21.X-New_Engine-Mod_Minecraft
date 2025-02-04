@@ -1,7 +1,9 @@
 package net.chung.newengine.item.custom;
 
 import net.chung.newengine.item.ModItems;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -12,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
@@ -20,6 +23,8 @@ import net.minecraft.world.level.portal.DimensionTransition;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
+
+import java.util.List;
 
 public class UnknownPearl extends Item {
     public UnknownPearl(Properties pProperties) {
@@ -167,5 +172,15 @@ public class UnknownPearl extends Item {
         public float getAttackDamage() {
             return attackDamage;
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("item.newengine.unknown_pearl.tooltip_shift_down"));
+        } else {
+            pTooltipComponents.add(Component.translatable("item.newengine.unknown_pearl.tooltip"));
+        }
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }

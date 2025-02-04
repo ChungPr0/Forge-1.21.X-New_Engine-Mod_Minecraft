@@ -5,6 +5,8 @@
   "block.newengine.unknownrite_block": "Block of Unknownrite",
 
   "item.newengine.unknown_pearl": "Unknown Pearl",
+  "item.newengine.unknown_pearl.tooltip": "Press §eShift§r for more Information!",
+  "item.newengine.unknown_pearl.tooltip_shift_down": "§eSimilar to Ender Pearl but never BREAK!",
 
   "creativetab.newengine.unknownrite_items": "Unknownrite Items",
   "creativetab.newengine.unknownrite_blocks": "Unknownrite Blocks"
