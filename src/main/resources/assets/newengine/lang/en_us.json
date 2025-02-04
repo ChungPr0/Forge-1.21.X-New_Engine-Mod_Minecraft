@@ -1,4 +1,6 @@
 {
   "item.newengine.unknownrite_ingot": "Unknownrite Ingot",
-  "item.newengine.unknownrite_dust": "Unknownrite Dust"
+  "item.newengine.unknownrite_dust": "Unknownrite Dust",
+
+  "block.newengine.unknownrite_block": "Unknownrite Block"
 }

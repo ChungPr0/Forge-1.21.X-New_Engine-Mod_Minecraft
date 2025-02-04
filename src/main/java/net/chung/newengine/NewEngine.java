@@ -1,6 +1,7 @@
 package net.chung.newengine;
 
 import com.mojang.logging.LogUtils;
+import net.chung.newengine.block.ModBlocks;
 import net.chung.newengine.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class NewEngine {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -48,6 +50,7 @@ public class NewEngine {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.UNKNOWNRITE_INGOT);
             event.accept(ModItems.UNKNOWNRITE_DUST);
+            event.accept(ModBlocks.UNKNOWNRITE_BLOCK);
         }
     }
 
