@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "newengine:item/unknown_axe"
+    "layer0": "newengine:item/tool/unknown_axe"
   }
 }

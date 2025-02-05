@@ -12,6 +12,11 @@
   "item.newengine.unknown_shovel": "Unknown Shovel",
   "item.newengine.unknown_hoe": "Unknown Hoe",
 
+  "item.newengine.unknown_helmet": "Unknown Helmet",
+  "item.newengine.unknown_chestplate": "Unknown Chestplate",
+  "item.newengine.unknown_leggings": "Unknown Leggings",
+  "item.newengine.unknown_boots": "Unknown Boots",
+
   "item.newengine.unknown_pearl.tooltip": "Press §eShift§r for more Information!",
   "item.newengine.unknown_pearl.tooltip_shift_down": "§eSimilar to Ender Pearl but never BREAK!",
 

@@ -27,6 +27,10 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.UNKNOWN_SHOVEL.get());
                         output.accept(ModItems.UNKNOWN_AXE.get());
                         output.accept(ModItems.UNKNOWN_HOE.get());
+                        output.accept(ModItems.UNKNOWN_HELMET.get());
+                        output.accept(ModItems.UNKNOWN_CHESTPLATE.get());
+                        output.accept(ModItems.UNKNOWN_LEGGINGS.get());
+                        output.accept(ModItems.UNKNOWN_BOOTS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> UNKNOWNRITE_BlOCKS_TAB = CREATIVE_MODE_TAB.register("unknownrite_bloks_tab",

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "newengine:item/unknown_sword"
+    "layer0": "newengine:item/tool/unknown_sword"
   }
 }
