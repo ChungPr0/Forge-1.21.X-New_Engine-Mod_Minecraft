@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "newengine:unknownrite_ingot_from_blasting_unknownrite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_unknownrite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "newengine:unknownrite_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_unknownrite_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "newengine:unknownrite_ingot_from_blasting_unknownrite_dust"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "newengine:unknownrite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "newengine:unknownrite_ingot"
+  }
+}
