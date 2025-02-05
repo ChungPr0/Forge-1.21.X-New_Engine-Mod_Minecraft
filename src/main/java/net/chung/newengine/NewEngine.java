@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.chung.newengine.block.ModBlocks;
 import net.chung.newengine.creativemodetab.ModCreativeModeTab;
 import net.chung.newengine.item.ModItems;
+import net.chung.newengine.util.ModTags;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,6 +32,7 @@ public class NewEngine {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
 
         ModCreativeModeTab.register(modEventBus);
 

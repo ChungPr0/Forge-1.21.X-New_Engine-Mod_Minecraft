@@ -5,6 +5,13 @@
   "block.newengine.unknownrite_block": "Block of Unknownrite",
 
   "item.newengine.unknown_pearl": "Unknown Pearl",
+
+  "item.newengine.unknown_sword": "Unknown Sword",
+  "item.newengine.unknown_pickaxe": "Unknown Pickaxe",
+  "item.newengine.unknown_axe": "Unknown Axe",
+  "item.newengine.unknown_shovel": "Unknown Shovel",
+  "item.newengine.unknown_hoe": "Unknown Hoe",
+
   "item.newengine.unknown_pearl.tooltip": "Press §eShift§r for more Information!",
   "item.newengine.unknown_pearl.tooltip_shift_down": "§eSimilar to Ender Pearl but never BREAK!",
 

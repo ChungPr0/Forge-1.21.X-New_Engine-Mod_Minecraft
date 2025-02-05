@@ -1,3 +1,5 @@
-// 1.21	2025-02-05T13:57:05.1244537	Tags for minecraft:block mod id newengine
+// 1.21	2025-02-05T16:50:26.8203527	Tags for minecraft:block mod id newengine
 06a635bbcaa37de760b068b08e54e55d9dedb14d data/minecraft/tags/block/mineable/pickaxe.json
 06a635bbcaa37de760b068b08e54e55d9dedb14d data/minecraft/tags/block/needs_diamond_tool.json
+8a3b3dd3b32d4cabef1ea1aa1b21a1ee869e2a5b data/newengine/tags/block/incorrect_for_unknown_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/newengine/tags/block/needs_unknown_tool.json
