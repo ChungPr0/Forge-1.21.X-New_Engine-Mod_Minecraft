@@ -8,30 +8,37 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class UnknownArmorEffects extends ArmorItem {
+
+    Holder<ArmorMaterial> UNKNOWN_ARMOR = ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL;
+
     public UnknownArmorEffects(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
     }
 
     @Override
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
-        if(!level.isClientSide() && hasFullSuitOfArmorOn(player) && hasPlayerCorrectArmorOn(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, player)) {
-            addEffectToPlayer(player);
+        if(!level.isClientSide() && hasFullSuitOfArmorOn(player) && hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player)) {
+            enableFlyToPlayer(player);
         }
-        if(!hasPlayerCorrectArmorOn(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, player) || !hasFullSuitOfArmorOn(player)) {
-            player.getAbilities().flying = false;
-            player.getAbilities().mayfly = false;
-            player.onUpdateAbilities();
+        if(!hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player) || !hasFullSuitOfArmorOn(player)) {
+            disableFlyToPlayer(player);
         }
     }
 
 
-    private void addEffectToPlayer(Player player) {
+    private void enableFlyToPlayer(Player player) {
         player.getAbilities().mayfly = true;
         player.onUpdateAbilities();
 
     }
 
-    private boolean hasPlayerCorrectArmorOn(Holder<ArmorMaterial> mapArmorMaterial, Player player) {
+    private void disableFlyToPlayer(Player player) {
+        player.getAbilities().flying = false;
+        player.getAbilities().mayfly = false;
+        player.onUpdateAbilities();
+    }
+
+    private boolean hasPlayerCorrectArmorOn(Holder<ArmorMaterial> armorMaterial, Player player) {
         for(ItemStack armorStack : player.getArmorSlots()) {
             if(!(armorStack.getItem() instanceof ArmorItem)) {
                 return false;
@@ -43,8 +50,8 @@ public class UnknownArmorEffects extends ArmorItem {
         ArmorItem chestplate = ((ArmorItem) player.getInventory().getArmor(2).getItem());
         ArmorItem helmet = ((ArmorItem) player.getInventory().getArmor(3).getItem());
 
-        return boots.getMaterial() == mapArmorMaterial && leggings.getMaterial() == mapArmorMaterial
-                && chestplate.getMaterial() == mapArmorMaterial && helmet.getMaterial() == mapArmorMaterial;
+        return boots.getMaterial() == armorMaterial && leggings.getMaterial() == armorMaterial
+                && chestplate.getMaterial() == armorMaterial && helmet.getMaterial() == armorMaterial;
     }
 
     private boolean hasFullSuitOfArmorOn(Player player) {

@@ -38,6 +38,8 @@ public class ModItems {
     public static final RegistryObject<Item> UNKNOWN_HOE = ITEMS.register("unknown_hoe",
             () -> new HoeItem(ModToolTiers.UNKNOWNRITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.UNKNOWNRITE, 1, -3.0f))));
+    public static final RegistryObject<Item> UNKNOWN_STAFF = ITEMS.register("unknown_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> UNKNOWN_HELMET = ITEMS.register("unknown_helmet",
             () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,

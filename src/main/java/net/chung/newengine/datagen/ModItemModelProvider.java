@@ -44,7 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.UNKNOWN_PEARL.get());
 
-        handheldItem(ModItems.UNKNOWN_SWORD);
+        //handheldItem(ModItems.UNKNOWN_SWORD);
         handheldItem(ModItems.UNKNOWN_PICKAXE);
         handheldItem(ModItems.UNKNOWN_AXE);
         handheldItem(ModItems.UNKNOWN_SHOVEL);

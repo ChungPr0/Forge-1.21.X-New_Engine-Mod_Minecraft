@@ -22,11 +22,15 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.UNKNOWNRITE_INGOT.get());
                         output.accept(ModItems.UNKNOWNRITE_DUST.get());
                         output.accept(ModItems.UNKNOWN_PEARL.get());
+
                         output.accept(ModItems.UNKNOWN_SWORD.get());
                         output.accept(ModItems.UNKNOWN_PICKAXE.get());
                         output.accept(ModItems.UNKNOWN_SHOVEL.get());
                         output.accept(ModItems.UNKNOWN_AXE.get());
                         output.accept(ModItems.UNKNOWN_HOE.get());
+
+                        output.accept(ModItems.UNKNOWN_STAFF.get());
+
                         output.accept(ModItems.UNKNOWN_HELMET.get());
                         output.accept(ModItems.UNKNOWN_CHESTPLATE.get());
                         output.accept(ModItems.UNKNOWN_LEGGINGS.get());
