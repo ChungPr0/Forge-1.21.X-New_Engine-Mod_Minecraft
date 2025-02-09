@@ -1,4 +1,4 @@
-// 1.21	2025-02-07T19:35:23.8527936	Item Models: newengine
+// 1.21	2025-02-10T00:32:38.9088404	Item Models: newengine
 ce6d80d51c18528750d2dd91de9325c16fba23b3 assets/newengine/models/item/unknownrite_dust.json
 d6ed2a62ec7ad8d6fb3d902294f4df6ef2802fc7 assets/newengine/models/item/unknownrite_ingot.json
 c5c41922998b12dc4572fe5614d304e48c3b7f72 assets/newengine/models/item/unknown_axe.json
@@ -50,3 +50,4 @@ a3e174e9104356153aba1ee0e159a48c40ffe6ac assets/newengine/models/item/unknown_le
 36cb6ef2df43c3f182c01d9b7cfbad3771d834fd assets/newengine/models/item/unknown_pearl.json
 b01c81fba873ff429460e4d93a7357a47bdfaf3b assets/newengine/models/item/unknown_pickaxe.json
 af1f0e7c01029ed1776e6e115e90c4e0fad7cbd9 assets/newengine/models/item/unknown_shovel.json
+46ac8108c9e5106fc0595f99a0e212761b302a6a assets/newengine/models/item/unknown_sword.json

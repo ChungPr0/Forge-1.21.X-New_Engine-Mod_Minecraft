@@ -17,11 +17,14 @@ public class UnknownArmorEffects extends ArmorItem {
 
     @Override
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
-        if(!level.isClientSide() && hasFullSuitOfArmorOn(player) && hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player)) {
-            enableFlyToPlayer(player);
-        }
-        if(!hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player) || !hasFullSuitOfArmorOn(player)) {
-            disableFlyToPlayer(player);
+        if(!level.isClientSide()) {
+            if(hasFullSuitOfArmorOn(player) && hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player)) {
+                enableFlyToPlayer(player);
+            }
+        } else {
+            if(!hasPlayerCorrectArmorOn(UNKNOWN_ARMOR, player) || !hasFullSuitOfArmorOn(player)){
+                disableFlyToPlayer(player);
+            }
         }
     }
 

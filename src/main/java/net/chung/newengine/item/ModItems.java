@@ -42,17 +42,17 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> UNKNOWN_HELMET = ITEMS.register("unknown_helmet",
-            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
+            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, UnknownArmorEffects.Type.HELMET,
+                    new Item.Properties().durability(ModToolTiers.UNKNOWNRITE.getUses())));
     public static final RegistryObject<Item> UNKNOWN_CHESTPLATE = ITEMS.register("unknown_chestplate",
-            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18))));
+            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, UnknownArmorEffects.Type.CHESTPLATE,
+                    new Item.Properties().durability(ModToolTiers.UNKNOWNRITE.getUses())));
     public static final RegistryObject<Item> UNKNOWN_LEGGINGS = ITEMS.register("unknown_leggings",
-            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18))));
+            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, UnknownArmorEffects.Type.LEGGINGS,
+                    new Item.Properties().durability(ModToolTiers.UNKNOWNRITE.getUses())));
     public static final RegistryObject<Item> UNKNOWN_BOOTS = ITEMS.register("unknown_boots",
-            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
+            () -> new UnknownArmorEffects(ModArmorMaterials.UNKNOWNRITE_ARMOR_MATERIAL, UnknownArmorEffects.Type.BOOTS,
+                    new Item.Properties().durability(ModToolTiers.UNKNOWNRITE.getUses())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
